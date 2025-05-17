@@ -1,6 +1,7 @@
 # Angular Noter
 
-# Indhold
+## Indhold
+[Next()](#next())
 [onDestroy](#ondestroy)
 
 ## onDestroy
@@ -42,6 +43,28 @@ Hvis du ikke unsubscribe, kan dit abonnement fortsætte med at køre i baggrunde
 - Dårlig ydelse
 - Hukommelseslækager
 
-
-
+---
 [Home](#indhold)
+##Next()
+Metoden next() kommer fra Subject i RxJS (Reactive Extensions for JavaScript), som Angular bruger til at håndtere streams og asynkrone data.
+
+### Hvad betyder next()?
+next(value) sender en ny værdi (her: query) ud til alle, der abonnerer (subscribes) på denne Subject.
+
+Altså: Når du kalder this.searchQuerySubject.next(query), fortæller du alle, der lytter på searchQuerySubject, at der er kommet et nyt søgeord.
+
+De komponenter eller services, som har lavet subscribe() på searchQuerySubject.asObservable(), modtager denne nye værdi og kan reagere på den (f.eks. hente nye data fra API).
+
+### En analogi:
+Forestil dig et radio broadcast:
+
+searchQuerySubject er radiokanalen.
+
+next(query) er som at sende en ny besked ud på kanalen.
+
+Alle, som har tændt radioen (subscribet), hører beskeden med det samme.
+
+### Opsummering:
+next() = send ny værdi til alle abonnenter.
+
+I dit tilfælde: Når brugeren skriver noget i søgefeltet og trykker søg, sender du søgeordet ud, og LandingpageComponent modtager det og kan opdatere listen af bøger.
