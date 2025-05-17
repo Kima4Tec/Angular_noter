@@ -1,7 +1,7 @@
 # Angular Noter
 
 # Indhold
-
+[onDestroy](#ondestroy)
 
 ## onDestroy
 
@@ -41,3 +41,7 @@ export class MyComponent implements OnDestroy {
 Hvis du ikke unsubscribe, kan dit abonnement fortsætte med at køre i baggrunden, selvom komponenten ikke længere vises, hvilket kan føre til:
 - Dårlig ydelse
 - Hukommelseslækager
+
+
+
+[Home](#indhold)
