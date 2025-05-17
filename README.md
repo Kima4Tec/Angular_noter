@@ -1,8 +1,8 @@
 # Angular Noter
 
 ## Indhold
-[Next()](#next())
-[onDestroy](#ondestroy)
+[Next()](#next())  
+[onDestroy](#ondestroy)  
 
 ## onDestroy
 
@@ -45,7 +45,7 @@ Hvis du ikke unsubscribe, kan dit abonnement fortsætte med at køre i baggrunde
 
 ---
 [Home](#indhold)
-##Next()
+## Next()
 Metoden next() kommer fra Subject i RxJS (Reactive Extensions for JavaScript), som Angular bruger til at håndtere streams og asynkrone data.
 
 ### Hvad betyder next()?
