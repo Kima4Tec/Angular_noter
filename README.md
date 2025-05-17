@@ -1,7 +1,7 @@
 # Angular Noter
 
 ## Indhold
-[Next()](#next())  
+[Next()](#next)  
 [onDestroy](#ondestroy)  
 
 ## onDestroy
